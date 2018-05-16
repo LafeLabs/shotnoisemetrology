@@ -1,0 +1,97 @@
+x0 = innerWidth/2;
+y0 = innerHeight/2 - 100;    
+x = x0;
+y = y0;
+
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0,0,innerWidth,innerHeight);
+ctx.lineWidth = 2;
+ctx.strokeStyle= plotparams.linecolor;
+ctx.fillStyle = plotparams.background;
+
+ctx.fillRect(x0-0.5*plotparams.plotwidth,y0,plotparams.plotwidth,plotparams.plotheight);
+
+for(var index = 0;index < plotparams.xdivs + 1;index++){
+    ctx.beginPath(); 
+    y = y0;
+    x = x0 - 0.5*plotparams.plotwidth + index*plotparams.plotwidth/plotparams.xdivs;
+    ctx.moveTo(x,y);
+    y = y0 + plotparams.plotheight;
+    ctx.lineTo(x,y);
+    ctx.stroke();
+}
+
+for(var index = 0;index < plotparams.ydivs + 1;index++){
+    ctx.beginPath(); 
+    x = x0 - 0.5*plotparams.plotwidth;
+    y = y0 + index*plotparams.plotheight/plotparams.ydivs;
+    ctx.moveTo(x,y);
+    x = x0 + 0.5*plotparams.plotwidth;
+    ctx.lineTo(x,y);
+    ctx.stroke();
+}
+/*
+ctx.beginPath(); 
+
+x = x0 - 0.5*plotparams.plotwidth;
+y = y0 - plotfunc(x-x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
+
+ctx.moveTo(x,y);
+
+for(x = x0-0.5*plotparams.plotwidth;x <= x0 + 0.5*plotparams.plotwidth;x += 1){
+    
+    ctx.moveTo(x-1,y);
+    y = y0 - plotfunc(x - x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
+    ctx.lineTo(x,y);
+}
+ctx.stroke();
+
+
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
+x = x0;
+y = y0;
+ctx.strokeStyle= "black";
+ticsize = 5;
+deltax = plotparams.plotwidth/arraydata.length;
+for(var index = 0;index < arraydata.length;index++){
+    x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+    y = y0 - plotparams.p2y*arraydata[index];
+        
+    ctx.beginPath(); 
+    ctx.moveTo(x  - ticsize,y);
+    ctx.lineTo(x + ticsize,y);
+    ctx.stroke();
+    ctx.beginPath(); 
+    ctx.moveTo(x,y - ticsize);
+    ctx.lineTo(x,y + ticsize);
+    ctx.stroke();
+}
+
+x0 = innerWidth/2;
+y0 = innerHeight/2 + 100;    
+x = x0;
+y = y0;
+ctx.strokeStyle= "black";
+ticsize = 5;
+deltax = plotparams.plotwidth/arraydata.length;
+for(var index = 0;index < arraydata.length;index++){
+    x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+    y = y0 - (plotparams.p2y*arraydata[index] - plotfunc(x - x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f));
+        
+    ctx.beginPath(); 
+    ctx.moveTo(x  - ticsize,y);
+    ctx.lineTo(x + ticsize,y);
+    ctx.stroke();
+    ctx.beginPath(); 
+    ctx.moveTo(x,y - ticsize);
+    ctx.lineTo(x,y + ticsize);
+    ctx.stroke();
+}
+
+
+
+
+
+*/
+

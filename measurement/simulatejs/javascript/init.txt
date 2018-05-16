@@ -1,0 +1,74 @@
+
+plotparams = JSON.parse(document.getElementById("plotparamsdiv").innerHTML);
+
+localsimjson = JSON.parse(document.getElementById("simjsondatadiv").innerHTML);
+    
+
+for(dataelement in plotparams){
+    var newtr = document.createElement("TR");
+    document.getElementById("plottable").appendChild(newtr);
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = dataelement;
+    newtr.appendChild(newtd);
+    var newtd2 = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newinput.value = plotparams[dataelement];
+    newtd2.appendChild(newinput);
+    newtr.appendChild(newtd2);
+    newinput.id = "input" + dataelement;
+    if(typeof plotparams[dataelement] === 'number'){
+        newinput.onchange = function(){
+            thisdata = this.id.substring(5);
+            plotparams[thisdata] = parseFloat(this.value);
+            redraw();
+        }
+    }
+    else{
+        newinput.onchange = function(){
+            thisdata = this.id.substring(5);
+            plotparams[thisdata] = this.value;
+            redraw();
+        }
+    }
+}
+
+for(dataelement in localsimjson){
+    var newtr = document.createElement("TR");
+    document.getElementById("simtable").appendChild(newtr);
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = dataelement;
+    newtr.appendChild(newtd);
+    var newtd2 = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newinput.value = localsimjson[dataelement];
+    newtd2.appendChild(newinput);
+    newtr.appendChild(newtd2);
+    newinput.id = "inPut" + dataelement;
+    if(typeof localsimjson[dataelement] === 'number'){
+        newinput.onchange = function(){
+            thisdata = this.id.substring(5);
+            localsimjson[thisdata] = parseFloat(this.value);
+            redraw();
+        }
+    }
+    else{
+        newinput.onchange = function(){
+            thisdata = this.id.substring(5);
+            localsimjson[thisdata] = this.value;
+            redraw();
+        }
+    }
+}
+document.getElementById("mainCanvas").width = innerWidth;
+document.getElementById("mainCanvas").height = innerHeight;
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
+x = x0;
+y = y0;
+
+rawinputdata = document.getElementById("datainput").value;
+arraystringdata = rawinputdata.split("\n");
+arraydata = [];
+for(var index = 0;index < arraystringdata.length;index++){
+    arraydata.push(parseFloat(arraystringdata[index]));
+}

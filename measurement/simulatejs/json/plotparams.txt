@@ -1,0 +1,8 @@
+{
+    "plotwidth":400,
+    "plotheight":400,
+    "xdivs":10,
+    "ydivs":10,
+    "background":"#303030",
+    "linecolor":"rgba(255, 255, 0, 0.2)"
+}
