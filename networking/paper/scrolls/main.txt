@@ -1,0 +1,10 @@
+<h2>Quantum Noise Metrology as Social Media</h2>
+
+<p>
+    Social media has fundamentally altered the Human Condition for all people on the Planet.  Communication in politics, war, the arts, in social interactions and in business all now take place at the pace of Twitter.  And yet science continues to publish on a 18 month time scale.  We can claim this is because we are more careful and subject our work to more review and editing than others, but this is a red herring.  
+</p>
+<p>
+    On a daily basis we are generating information which is neither proprietary nor secret, is too small and not new enough to warrant publication and yet which can benefit the overall progress of our field enormously.  The lack of real time technical communication throughout the community in a quantitative and math-friendly format which can be interacted with on smart phones is therefore holding back all scientific progress in comparison to other human endeavors today.  
+</p>
+
+
