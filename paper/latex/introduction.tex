@@ -1,16 +1,30 @@
-<h2>Motivation</h2>
-<p>
-    The purpose of this project is to improve the signal to noise ratio for all RF measurements in the quantum information community.  Because the scaleability of quantum computing is dependent on qubit fidelity, which in turn is dependent on RF noise level, this is a critical parameter in all superconducting qubits.  To accomplish this task, much time and money has been poured into technologies like superconducting amplifiers, circulators and other measurement tools. 
-</p> 
-<p>
-     While such technologies have indeed proven useful, investigation into the actual noise floor of quantum measurement experiments with shot noise tunnel junctions has shown that noise levels are not as they seem.  Losses, reflections, and subtle combinations of the two often conspire to make noise levels considerably higher than their nominal value based on the stated noise level of both the exotic quantum amplifiers now being deployed and the various commercial semiconducting amplifiers that are used to follow them. 
-</p>
-<p>
-    This presents a problem for anyone hoping to move the overall field forward.  Money spent on both equipment and R&D for new measurement tools can get squandered when distributed across the whole QC community, based on lossy coaxial cables, multiple reflections from small impedance mismatches, and so on.  The purpose of shot noise tunnel junction metrology is thus not just to prove that it works and test some amplifiers.  It is to create a pattern of information flow across the whole field which enables all researchers to get a better handle on the losses and reflections in their measurements and then eliminiate those issues to bring their noise levels down to where they can be based on the technology available.  
-</p>
-<p>The information flow of this system can be summarized as follows.  Joe Aumentado at NIST in Boulder has perfectedt the fabrication processes and a system for packaging the tunnel junctions with a good enclosure and circuit board, and the first step in using this system is acquiring a device from Joe.  Once a lab has a packaged device they need to integrate it into their measurement system in a way that gives an accurate picture of their whole measurement chain.  The core elements of this are a bias tee to allow for DC current bias of the junction while also measuring the voltage on the junction.  One thus generally wants to split the line on the DC side of the bias tee off into a voltage line and a current bias line.  Ideally both of these lines are filtered with a cryogenic DC filter of some kind such as a powder filter, and cold bias resistors should also be in both lines.
 
-</p>
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\begin{document}
+
+\section{
+Motivation}
+
+
+
+    The purpose of this project is to improve the signal to noise ratio for all RF measurements in the quantum information community.  Because the scaleability of quantum computing is dependent on qubit fidelity, which in turn is dependent on RF noise level, this is a critical parameter in all superconducting qubits.  To accomplish this task, much time and money has been poured into technologies like superconducting amplifiers, circulators and other measurement tools. 
+ 
+
+
+
+     While such technologies have indeed proven useful, investigation into the actual noise floor of quantum measurement experiments with shot noise tunnel junctions has shown that noise levels are not as they seem.  Losses, reflections, and subtle combinations of the two often conspire to make noise levels considerably higher than their nominal value based on the stated noise level of both the exotic quantum amplifiers now being deployed and the various commercial semiconducting amplifiers that are used to follow them. 
+
+
+
+
+    This presents a problem for anyone hoping to move the overall field forward.  Money spent on both equipment and R&D for new measurement tools can get squandered when distributed across the whole QC community, based on lossy coaxial cables, multiple reflections from small impedance mismatches, and so on.  The purpose of shot noise tunnel junction metrology is thus not just to prove that it works and test some amplifiers.  It is to create a pattern of information flow across the whole field which enables all researchers to get a better handle on the losses and reflections in their measurements and then eliminiate those issues to bring their noise levels down to where they can be based on the technology available.  
+
+
+
+The information flow of this system can be summarized as follows.  Joe Aumentado at NIST in Boulder has perfectedt the fabrication processes and a system for packaging the tunnel junctions with a good enclosure and circuit board, and the first step in using this system is acquiring a device from Joe.  Once a lab has a packaged device they need to integrate it into their measurement system in a way that gives an accurate picture of their whole measurement chain.  The core elements of this are a bias tee to allow for DC current bias of the junction while also measuring the voltage on the junction.  One thus generally wants to split the line on the DC side of the bias tee off into a voltage line and a current bias line.  Ideally both of these lines are filtered with a cryogenic DC filter of some kind such as a powder filter, and cold bias resistors should also be in both lines.
+
+
 
 <h4>Outline of this Document</h4>
 <ol>
@@ -20,3 +34,5 @@
     <li>Notes on Units for Noise Metrology near the Quantum limit</li>
     <li>Quantum Noise Measurements as Social Media: how creating a network of information flow in real time between quantum labs about noise measurement and improve the overall measurement standards of the whole field</li>
 </ol>
+
+\end{document}
