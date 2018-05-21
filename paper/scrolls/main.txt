@@ -1,2 +1,18 @@
 <h2>Tunnel Junction Noise for Amplifier Metrology</h2>
 
+
+List of stuff to do:
+
+<ul>
+    <li>
+     Edit Joe's document to make it less informal, make it fit better into overall document, add details about installation to cohere with what I've written already.    
+    </li>
+    <li>
+        Measurement section needs a figure showing how it all goes together, a figure with example fit, and detailed fitting instructions.
+    </li>
+    <li>
+        Final social section needs figures for each step that exists, and detailed description of each software unit.
+    </li>
+    <li>need a script to put it all into one pdf document with a click</li>
+    <li>need a reader at index.php which can read all the scrolls, switch between them.</li>
+</ul>
