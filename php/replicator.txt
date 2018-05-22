@@ -1,6 +1,6 @@
 <?php
 
-    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/page/json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/latexscroll/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
@@ -24,6 +24,9 @@
             fclose($file);  //close file                
         }
     }
+    mkdir("pages");
+    mkdir("latex");
+    mkdir("figures");
 ?>
 
 

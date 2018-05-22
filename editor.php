@@ -1,54 +1,63 @@
  <!doctype html>
 <html>
 <head>
- <!-- 
-PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
-
-EVERYTHING IS PHYSICAL
-EVERYTHING IS FRACTAL
-EVERYTHING IS RECURSIVE
-NO MONEY
-NO PROPERTY
-NO MINING
-EGO DEATH:
-    LOOK TO THE INSECTS
-    LOOK TO THE FUNGI
-    LANGUAGE IS HOW THE MIND PARSES REALITY
--->
-<!--Stop Google:-->
-<META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<title>PHP Editor replicator</title>
 </head>
 <body>
+<div id = "scrolldirdiv" style = "display:none">
+<?php
+$scrolls = scandir(getcwd()."/scrolls");
+foreach($scrolls as $value){
+    if($value != "." && $value != ".."){
+        echo $value."\n";
+    }
+}
+?>
+</div>
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
-    <a href = "pageeditor.php">pageeditor.php</a>
     <a href = "index.php">index.php</a>
+    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
-    <a href = "dnagenerator.php">dnagenerator.php</a>
+    <a href = "makenewscroll.php">makenewscroll.php</a>
+    <a href = "scrolleditor.php">scrolleditor.php</a>
+
+    <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
+    <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
 
-    <div class = "html file">html/page.txt</div>
-    
-    <div class = "php file">php/index.txt</div>
-    <div class = "php file">php/pageeditor.txt</div>
     <div class = "php file">php/editor.txt</div>
+    <div class = "php file">php/index.txt</div>
+    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/makenewscroll.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
+
 </div>
 
 <script>
-currentFile = "php/editor.txt";
+rawscrollnames = document.getElementById("scrolldirdiv").innerHTML;
+scrollnames = rawscrollnames.split("\n");
+
+var filescrolldata = document.getElementById("filescroll").innerHTML;
+for(var index = 0;index < scrollnames.length;index++){
+    if(scrollnames[index].length > 1){
+        filescrolldata += "\n<div class = \"scrolls file\">scrolls/" + scrollnames[index] + "</div>\n";
+    }
+}
+
+document.getElementById("filescroll").innerHTML = filescrolldata;
+
+currentFile = "php/scrolleditor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -115,12 +124,12 @@ for(var index = 0;index < files.length;index++){
     }
 }
 document.getElementById("namediv").innerHTML = currentFile;
-document.getElementById("namediv").style.color = "#0000ff";
-document.getElementById("namediv").style.borderColor = "#0000ff";
+document.getElementById("namediv").style.color = "#800080";
+document.getElementById("namediv").style.borderColor = "#800080";
 
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
-editor.getSession().setMode("ace/mode/html");
+editor.getSession().setMode("ace/mode/php");
 editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 
@@ -202,7 +211,7 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:22px;
+    font-size:18px;
 }
 #linkscroll{
     position:absolute;
@@ -216,7 +225,8 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:22px;
+    font-size:18px;
+    
 }
 #maineditor{
     position:absolute;
@@ -224,7 +234,6 @@ body{
     top:5em;
     bottom:1em;
     right:30%;
-    font-size:22px;
 }
 
 
