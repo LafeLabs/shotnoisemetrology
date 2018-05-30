@@ -1,6 +1,7 @@
 <h2>Tunnel Junction Noise for Amplifier Metrology</h2>
 
 <ul>
+    <li><a href = "index.php?url=scrolls/equations.txt">Equations</a></li>
     <li><a href = "index.php?url=scrolls/introduction.txt">Introduction</a></li>
     <li><a href = "index.php?url=scrolls/installation.txt">Installation</a></li>
     <li><a href = "index.php?url=scrolls/measurement.txt">Measurement</a></li>

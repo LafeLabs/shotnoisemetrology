@@ -34,7 +34,29 @@ $$
      
  \left(\frac{hf}{2kT}\right)\coth{\left(\frac{hf}{2kT}\right)}  
  
- \right\}
+ \right\}.
 $$
+<p>
+    Let's now take the two limits of this expression where either hf is much bigger or much smaller than kT.  When hf is small compared to kT we are in the classical limit and the equation reduces to 
+</p>
+$$
+    P = G(T_N + T).
+$$
+<p>
+    This is the equation one would use to do a y factor method measurement using a hot and cold load at low frequency and higher temperatures. In the opposite limit, the quantum limit, where hf is large compared to kT, we get 
+</p>
+$$
+P = G\left(T_N + \frac{hf}{2k}
+\right)
+$$
+<p>
+    At this point is is worth tabulating some common values for voltage, frequency and temperature. For theory plots we then set G equal to 1 so that the y axis of plots are all also in kelvin units.  For explicit plotting on a computer we can then convert between pixels and kelvins to get precisely the desired artistic plot.  
+</p>
+<table>
+    <tr>
+        <td>T[K]</td><td>f[GHz]</td><td>V[mV]</td>
+        <td></td><td></td><td></td>
+    </tr>
+</table>
 
 
