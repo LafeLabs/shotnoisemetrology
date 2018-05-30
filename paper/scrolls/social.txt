@@ -22,19 +22,17 @@
     </p>
 
     <ol>
-        <li>Junction design</li>
-        <li>Junction Fabrication</li>
-        <li>Junction distribution</li>
-        <li>Package fabrication</li>
-        <li>package distribution</li>
-        <li>board fabrication</li>
-        <li>board distribution</li>
-        <li>Installation in fridge</li>
-        <li>Overall measurement chain assembly and documentation</li>
-        <li>Tests before and during cooldown</li>
-        <li>Data at base temperature</li>
-        <li>Plotting data</li>
-        <li>Interpreting data for future improvements</li>
+        <li>Junction design.  For this step the social media will consist of designing layout using a web based tool which creates SVG files which can be automatically converted to GDS.  Geometron can be used to make "SVG factories" which generate a Twitter-like feed of layout files so everyone in the community can share in the design process and cross-debug.</li>
+        <li>Junction Fabrication. Fabrication should be described using a simple html interface so that as processes are carried out in the clean room a virtual lab notebook is updated in real time which the rest of the community can see.  This HTML document will have microscope pictures and links back to the SVG files generated in the design step.</li>
+        <li>Junction distribution.  This is a sort of decentralized ledger(sans pointless encryption) which the community can use to keep track of distribution of individual devices, tracking them from whoever fabricated them to whoever measures them.  This should allow for future sharing of devices: if you see someone has a junction they got 4 years ago and has done nothing with, another researcher in an under-funded lab looking to try some simple stuff can get it from them for free with no added cost or hassle.</li>
+        <li>Package fabrication and distribution.  This is a matter of version control and sharing of repositories with all the various CAD drawings.  As with fabrication this is just straight HTML sharing. Also this should have contact information for machine shops which build things commercially.  </li>
+        <li>board fabrication and distribution</li>
+        <li>Installation in fridge and documentation of apparatus.</li>
+        <li>Tests before and during cool down</li>
+        <li>Data at base temperature.  Shared Python, MatLab and LabView code.</li>
+        <li>Plotting data. php and python together for least squares fit</li>
+        <li>Interpreting data for future improvements. Mini papers presenting results for internal use as well as external study and future debugging.</li>
+        <li>Publication.  This entire process should be geared toward publication quality graphics, and well documented information which can be easily and reliably incorporated in peer reviewed papers and PhD dissertations.</li>
     </ol>
     
     <p>

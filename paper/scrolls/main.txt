@@ -24,3 +24,26 @@ List of stuff to do:
     <li>need a script to put it all into one pdf document with a click</li>
     <li>need a reader at index.php which can read all the scrolls, switch between them.</li>
 </ul>
+
+<h4>re-re-rewrite</h4>
+
+<ul>
+    <li>
+        Motivation
+    </li>
+    <li>
+        Noise Units and form of equations
+    </li>
+    <li>
+        Documenting and building the measurement chain
+    </li>
+    <li>
+        Warm checklist and cooldown
+    </li>
+    <li>
+        Generating, fitting, publishing the plots
+    </li>
+    <li>
+        Using information to improve overall measurement
+    </li>
+</ul>

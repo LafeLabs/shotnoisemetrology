@@ -8,14 +8,19 @@
 <p>
     This presents a problem for anyone hoping to move the overall field forward.  Money spent on both equipment and research and development for new measurement tools can get squandered when distributed across the whole QC community, based on lossy coaxial cables, multiple reflections from small impedance mismatches, and so on.  The purpose of shot noise tunnel junction metrology is thus not just to prove that it works and test some amplifiers.  It is to create a pattern of information flow across the whole field which enables all researchers to get a better handle on the losses and reflections in their measurements and then eliminiate those issues to bring their noise levels down to where they can be based on the technology available.  
 </p>
-<p>The information flow of this system can be summarized as follows.  Joe Aumentado at NIST in Boulder has perfectedt the fabrication processes and a system for packaging the tunnel junctions with a good enclosure and circuit board, and the first step in using this system is acquiring a device from Joe.  Once a lab has a packaged device they need to integrate it into their measurement system in a way that gives an accurate picture of their whole measurement chain.  The core elements of this are a bias tee to allow for DC current bias of the junction while also measuring the voltage on the junction.  One thus generally wants to split the line on the DC side of the bias tee off into a voltage line and a current bias line.  Ideally both of these lines are filtered with a cryogenic DC filter of some kind such as a powder filter, and cold bias resistors should also be in both lines.
-
+<p>The information flow of this system can be summarized as follows.  Joe Aumentado at NIST in Boulder has perfected the fabrication processes and a system for packaging the tunnel junctions with a good enclosure and circuit board, and the first step in using this system is acquiring a device from Joe.  Once a lab has a packaged device they need to integrate it into their measurement system in a way that gives an accurate picture of their whole measurement chain.  To do this, the shot noise junction is inserted into the system in a place that is as close as possible to where the sample will be in the quantum information measurement which is the ultimate goal of the lab.   This chain must be meticulously documented if this is to be useful, and for it to be of value to the community at large that documentation should be shared online.  
+</p>
+<p>
+    With the device installed, the fridge is cooled down, with data being taken during the cool down.  When cold, noise is measured on a spectrum analyzer in zero span mode while voltage on the tunnel junction is swept at audio rates.  This measurement should be as consistent as possible throughout the quantum information community, and should be shared in a way where everyone is comparing data in an almost identical format.  Thus the information being shared is a combination of diagrams which detail the exact nature of the full measurement chain from device to rack and plots of a standardized measurement which anyone with basic lab tools should be able to do in an identical way.  This combined shared data stream allows all participants in the quantum information field to observe in real time what works and what doesn't and to improve the <em>overall</em> quantum measurement efficiency of the field.  
+</p>
+<p>
+    This document is intended to describe how to do the main measurement all this is based on and how to document the measurement chain to get the most out of this information.  The organization is as follows:
 </p>
 
 <h4>Outline of this Document</h4>
 <ol>
     <li>Introduction</li>
-    <li>Information from Joe's lab about device fab and installation</li>
+    <li>Information from Joe's lab about device fab and installation[This is mostly a translation of Joe's document into html]</li>
     <li>Step by Step measurement and fit guide</li>
     <li>Notes on Units for Noise Metrology near the Quantum limit</li>
     <li>Quantum Noise Measurements as Social Media: how creating a network of information flow in real time between quantum labs about noise measurement and improve the overall measurement standards of the whole field</li>

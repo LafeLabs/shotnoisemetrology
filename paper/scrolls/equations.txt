@@ -1,0 +1,22 @@
+<h4>Equations and Definitions</h4>
+
+<p>
+    The most general equation for shot noise junction measurements is:
+</p>
+
+ $$
+ P = G\left\{T_N + \frac{1}{2}T\left[
+ 
+ \left(\frac{eV + hf}{2kT}\right)\coth{\left(\frac{eV + hf}{2kT}\right)}   +
+ \left(\frac{eV - hf}{2kT}\right)\coth{\left(\frac{eV - hf}{2kT}\right)}   
+ 
+ \right]\right\},
+ $$
+ 
+ 
+ <p>
+     where $T_N$ is the noise temperature to be defined below, T is the physical temperature, f is the frequency of the measurement, k is the Boltzman constant, h is Plank's constant, and G is gain in units of integrated measured power per kelvin.  
+ </p>
+ <p>
+     The definition of G here and the use of total integrated power units is a key element to making sense of these experiments in the lab.  The standard equations in the literature express 
+ </p>
