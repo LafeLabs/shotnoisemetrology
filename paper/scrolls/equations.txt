@@ -18,5 +18,23 @@
      where $T_N$ is the noise temperature to be defined below, T is the physical temperature, f is the frequency of the measurement, k is the Boltzman constant, h is Plank's constant, and G is gain in units of integrated measured power per kelvin.  
  </p>
  <p>
-     The definition of G here and the use of total integrated power units is a key element to making sense of these experiments in the lab.  The standard equations in the literature express 
+     The definition of G here and the use of total integrated power units is a key element to making sense of these experiments in the lab.  The standard equations in the literature are for power spectral density in units of amps squared per hertz or volts squared per hertz.  This gives numbers which most of us are not calibrated in mentally, and introduces information we don't care about in the final analysis for shot noise metrology.  By having G convert straight from kelvins to the final units that appear on the screen of your spectrum analyzer, we eliminate any units that we will not need to develop intuition for in the lab.  
  </p>
+ <p>
+      Defining noise temperature may seem obvious, but if you study the literature, almost none of the papers have internally consistent definitions.  Even papers by people who should know better(I will not mention names) use the classical definition based on the physical temperature of a resistive load at the input of the amplifier.  The problem with this is that of course when we are at 10 milikelvin and 8 GHz, we are very much in the quantum regime, and the physical temperature is almost irrelevant to our measurement.  Numerous mathematical tricks are used to deal with this in the literature, which tend to be a distraction and lead to directly contradictory definitions.  In some papers, directly after defining the noise temperature in terms of physical temperature the authors contradict themselves and use the definition we will give here.  In the older references, weird definitions involving log of 2 or log of 3 appear, which adds to confusion, since some modern authors bring these nonsensical definitions back from the dead, and cite prominant papers to back it up.  
+ </p>
+ <p>
+     For the purpose of this work we will use the definition which almost the whole community uses but does not explicitly state.  This definition is "The noise temperature of a measurement is noise referenced to the input with a matched load, in temperature units".  Note that this does not reference physical temperature: we are just using temperature as a sort of energy currency, the unit in which energy or power is expressed.  How we convert to temperature units depends on specifics of the measurement, but again kelvins are just a unit here in a strict mathematical sense, not a physical measurement of any real temperature.  One reason it is important to make this distinction is when evaluating amplifiers which are very far from a matched load.  For instance room temperature operational amplifiers can routinely have noise temperatures orders of magnitude below room temperature.  This is not physical! It is just a statement of noise energy in kelvin units, and it reflects the fact that op amps have very high input impedance.
+ </p>
+ <p>
+     The first special case that we care about for this analysis is the case of zero voltage bias on the junction.  In this case the above equation reduces to 
+</p>
+$$
+     P = G\left\{T_N + T
+     
+ \left(\frac{hf}{2kT}\right)\coth{\left(\frac{hf}{2kT}\right)}  
+ 
+ \right\}
+$$
+
+
