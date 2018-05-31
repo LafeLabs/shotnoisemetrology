@@ -55,7 +55,24 @@ $$
 <table>
     <tr>
         <td>T[K]</td><td>f[GHz]</td><td>V[mV]</td>
-        <td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>300</td> <td>6300</td> <td>25</td>
+    </tr>
+    <tr>
+        <td>77</td>  <td>1600</td> <td>6.6</td>
+    </tr>
+    <tr>
+        <td>4</td> <td>83</td> <td>0.34</td>
+    </tr>
+    <tr>
+        <td>1</td> <td>20</td> <td>0.086</td>
+    </tr>
+    <tr>
+        <td>0.1</td> <td>2</td> <td>0.008</td>
+    </tr>
+    <tr>
+        <td>0.01</td> <td>0.2</td> <td>0.0008</td>
     </tr>
 </table>
 
