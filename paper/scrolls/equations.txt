@@ -76,4 +76,10 @@ $$
     </tr>
 </table>
 
-
+<p>From this table one can immediately see at what temperatures and frequencies we are in the quantum regime and it is not surprising.  For most quantum measurement noise metrology experiments we will be dealing with 1-10 GHz frequencies and temperatures of 10-20 mK for which we should be fairly solidly in the quantum regime.  Above 1 K quantum effects should mostly be negligible.  </p>
+<p>
+    When we do shot noise metrology we want to be measuring the shot noise curve at all temperatures from room temperature to base to observe any problems that may arise.  Therefore it is important to know what to expect from the main shot noise equation at all of these temperatures.  
+</p>
+<p>
+    At room temperature voltage bias is not determined by the voltage we want to go to but by what will damage the device.  The devices now being fabricated at NIST are as thin a tunnel barrier(short oxidation time and low pressure) as possible in order to minimize RC time and maximize usable frequency.  This makes them quite sensitive to various forms of damage.  While a theoretical value of what should damage the junctions does not exist, 100 mV seems to be a good rule of thumb maximum value for plus and minus voltage bias.  
+</p>
